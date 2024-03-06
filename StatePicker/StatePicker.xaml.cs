@@ -1,4 +1,8 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,14 +16,13 @@ using System.Windows.Shapes;
 namespace StatePicker
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for StatePicker.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class StatePicker :ComboBox
     {
-        public UserControl1()
+        public StatePicker()
         {
             InitializeComponent();
         }
     }
-
 }
