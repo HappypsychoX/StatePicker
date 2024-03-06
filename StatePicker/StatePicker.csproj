@@ -5,6 +5,14 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>HappypsychoX</Authors>
+    <Title>WPF StatePicker</Title>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Description>WPF control populated with US States.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HappypsychoX/StatePicker</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>WPF, Controls</PackageTags>
   </PropertyGroup>
 
 </Project>

@@ -10,25 +10,43 @@ namespace StatePicker
 
         public StatePicker()
         {
+            // Initialize the component
             InitializeComponent();
+
+            // Create a new instance of the StateList class
             StateList stateList = new StateList();
+
+            // Set the ItemsSource property to the list of states
             this.ItemsSource = stateList.States;
+
+            // Set the SelectedValuePath property to the Abbreviation property of the State class (Default behaviour)
             this.SelectedValuePath = "Abbreviation";
         }
     }
 
+    /// <summary>
+    /// Class representing a State
+    /// </summary>
     public class State
     {
         public string Name { get; set; }
         public string Abbreviation { get; set; }
     }
 
+    /// <summary>
+    /// Class representing a list of states
+    /// </summary>
     public class StateList
     {
         public List<State> States { get; set; }
         public StateList()
         {
             States = new List<State>();
+
+            // Add states to the list
+            // Each state is represented by an instance of the State class
+            // The Name property is set to the name of the state
+            // The Abbreviation property is set to the abbreviation of the state
             States.Add(new State() { Name = "Alabama", Abbreviation = "AL" });
             States.Add(new State() { Name = "Alaska", Abbreviation = "AK" });
             States.Add(new State() { Name = "Arizona", Abbreviation = "AZ" });
