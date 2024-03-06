@@ -21,7 +21,7 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="5">
-            <TextBlock Text="Abbreviation" FontSize="15" FontWeight="Bold" Margin="5"/>
+            <TextBlock Text="Full Name" FontSize="15" FontWeight="Bold" Margin="5"/>
             <StatePicker:StatePicker x:Name="statePickerFullName" Width="120" Height="25" Margin="5" HorizontalAlignment="Left" SelectedValuePath="Name"/>
             <TextBlock Text="Selected Value" Margin="5" FontSize="15" FontWeight="SemiBold" />
             <TextBlock Text="{Binding ElementName=statePickerFullName, Path=SelectedValue}" Margin="5"/>
