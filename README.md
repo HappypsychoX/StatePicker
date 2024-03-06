@@ -6,6 +6,7 @@ list of all US states. It provides a convenient dropdown interface for users to 
 
 ## Usage
 By default the *SelectedItem* property returns the abbreviation for the selected State. This can be changed by adding the following code to the control declaration in xaml: `this.SelectedValuePath = "Name"`. This will return the full name of the state as a string. 
+
 Example: `<StatePicker:StatePicker x:Name="statePicker" Width="120" Height="25" HorizontalAlignment="Left" SelectedValuePath="Name"/>`
 
 ## License
